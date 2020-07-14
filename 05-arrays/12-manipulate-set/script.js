@@ -20,8 +20,16 @@
         "durian",
         "peach",
         "grape",
-        "cherry",
+        "cerise",
     ]);
 
-    // your code here
+    document.getElementById('run').onclick = () => 
+    {
+    fruits.delete("apple");
+    fruits.delete("cerise");
+    fruits.add("banana");
+    fruits.add("kiwi");
+    console.log(fruits);
+    }
+
 })();

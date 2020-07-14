@@ -13,7 +13,15 @@
     // to get the value of an input: document.getElementById("element-id").value
 
     const performOperation = operation => {
-    console.log($btn.id)
+    console.log(operation);
+    console.log(Number(document.getElementById('op-one').value) + Number(document.getElementById('op-two').value));
+    switch (String(operation)) {
+     case 'addition': alert(Number(document.getElementById('op-one').value) + Number(document.getElementById('op-two').value)); break;
+     case 'substraction': alert(Number(document.getElementById('op-one').value) - Number(document.getElementById('op-two').value)); break;
+     case 'multiplication': alert(Number(document.getElementById('op-one').value) * Number(document.getElementById('op-two').value)); break;
+     case 'division': alert(Number(document.getElementById('op-one').value) / Number(document.getElementById('op-two').value)); break;
+         }
+
     };
 
     Array.from(document.querySelectorAll("button.operator")).forEach($btn =>

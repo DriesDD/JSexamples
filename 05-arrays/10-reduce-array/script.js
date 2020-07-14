@@ -89,6 +89,6 @@
         },
     ];
 
-    // your code here
-
+    document.getElementById('run').onclick = () => //when you click run...
+    console.log((people.map(a=>a.age)).reduce((a,b)=>a+b)) // ...it first makes a subarray of only the ages using map, then reduces all ages to 1 combined number
 })();

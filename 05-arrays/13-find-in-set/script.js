@@ -22,5 +22,11 @@
         "Lucas",
     ]);
 
-    // your code here
+    document.getElementById('run').onclick = () => 
+    {
+    console.log(people.size);
+    console.log('Alexandre here? ' + people.has("Alexandre"))
+    }
+
+
 })();

@@ -10,5 +10,9 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    document.getElementById('run').onclick = () => 
+    {
+    var me = {firstname:"Dries", lastname:"De Decker", age:"28", city:"Ghent", country:"Belgium"}; 
+    console.log(me);
+    }
 })();

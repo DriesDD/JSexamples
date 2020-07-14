@@ -10,7 +10,15 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
+    for (i=1; i<=100;i++)
+    {if (Math.trunc(i/15) == i/15)
+    {console.log('fizzbuzz')}
+    else if (Math.trunc(i/5) == i/5)
+    {console.log('buzz')}
+    else if (Math.trunc(i/3) == i/3)
+    {console.log('fizz')}
+    else
+    console.log(i)
+    }
 
 })();

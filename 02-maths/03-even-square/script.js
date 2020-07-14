@@ -12,9 +12,12 @@
 (function() {
 
     document.getElementById("run").addEventListener("click", function() {
-
-        // your code here
-
+        let nmbrs = 'Series: ';
+      for (i= 1; (i*i) <= 22; i++) {
+        nmbrs += Math.pow(Number(i),2);
+        nmbrs += ', ';
+        };
+        alert(nmbrs);
     });
 
 })();

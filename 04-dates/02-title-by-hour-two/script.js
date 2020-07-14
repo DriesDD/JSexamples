@@ -11,8 +11,8 @@
 
 (function() {
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-
-    // your code here
+    document.getElementById("target").innerHTML = "Hello";
+    const d = new Date();
+    if (d.getHours() >= 18 || ( d.getHours() >= 17 && d.getMinutes() >= 30)) {document.getElementById("target").innerHTML = "Good evening"};
 
 })();

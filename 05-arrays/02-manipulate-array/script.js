@@ -9,8 +9,9 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+document.getElementById('run').onclick = function() {smoothie()};
 
+function smoothie() {
     var fruits = [
         "pomme",
         "poire",
@@ -24,6 +25,13 @@
         "cerise",
     ];
 
+    fruits.pop();
+    fruits.push('kiwi');
+    fruits.shift();
+    fruits.unshift('banana');
+
+    console.log(fruits)
+
     // your code here
 
-})();
+};

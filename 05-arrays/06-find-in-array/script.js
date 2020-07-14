@@ -89,6 +89,6 @@
         },
     ];
 
-    // your code here
+    console.log((people.find(obj => obj.firstname == 'Jean' && obj.lastname == 'Dupont')).email)
 
 })();
