@@ -10,7 +10,11 @@
 // You will have time to focus on it later.
 
 (function() {
+    let count = 0
 
-    // your code here
+    document.getElementById("pass-one").addEventListener("input",function(){
+    document.getElementById("counter").innerText = (document.getElementById("pass-one").value).length + "/10";
+    document.getElementById("pass-one").setAttribute("maxlength","10");
+    })
 
 })();

@@ -9,22 +9,56 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-function pad(n){return n<10 ? '0'+n : n}
-
 (function() {
 
-document.getElementById('run').onclick = function(){
-var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-const y = document.getElementById('year').value;
-let m = 'The spooky months of the year ' + y + ' are: ';
-let d = new Date();
-for (i = 1; i< 13; i++)
-{ d = new Date(y+'-'+pad(i)+'-13');
-    if (d.getDay() == 5)
-{m += '\n' + months[d.getMonth()] }
-}
-alert (m);
+    document
+      .getElementById("run")
+      .addEventListener("click", function getLuckyFridayMonths() {
+        let months = [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec",
+        ];
 
-}
+        let days = [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ];
+
+        let sunday = days[0];
+        let input = document.getElementById("year").value;
+        let date = new Date(input);
+        let firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
+        console.log(firstDay);
+
+        firstDayOfMonth = firstDay.getDay();
+        console.log(firstDayOfMonth);
+
+        for (let i = 1; i <= 12; i++) {
+          let month = new Date(`${i} 1, ${input}`);
+          if (month.getDay() == 0) {console.log(month)};
+
+        }
+
+      });
+
+ 
+    // Get input Year OK
+    // Check each month of the year is firstday = sunday
+    // If sunday return value 
 
 })();

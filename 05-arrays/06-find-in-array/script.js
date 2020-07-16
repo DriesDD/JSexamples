@@ -90,5 +90,6 @@
     ];
 
     console.log((people.find(obj => obj.firstname == 'Jean' && obj.lastname == 'Dupont')).email)
+    console.log((people.findIndex(obj => obj.firstname == 'Jean' && obj.lastname == 'Dupont')))
 
 })();

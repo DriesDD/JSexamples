@@ -11,6 +11,15 @@
 
 (function() {
 
-    // your code here
+document.getElementById('run').onclick = () => {
+if (document.getElementById('pass-one').value == document.getElementById('pass-two').value)
+    {document.getElementById('pass-one').style["border-color"] = "green";
+    document.getElementById('pass-two').style["border-color"] = "green";
+    }
+ else
+ {document.getElementById('pass-one').style["border-color"] = "red";
+ document.getElementById('pass-two').style["border-color"] = "red"
+ }
+}
 
 })();

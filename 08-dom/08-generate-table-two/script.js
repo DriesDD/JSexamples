@@ -9,8 +9,16 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-
-    // your code here
-
+(function () {
+    let html = "<table>"
+    for (i = 1; i < 11; i++) {
+        html += "<tr>"
+        for (j = 1; j < 11; j++) {
+            html += " <td>" + i * j + "</td>"
+        }
+        html += "</tr>"
+    }
+    html += "</table>"
+    let table = document.createElement("tr");
+    document.getElementById("target").innerHTML = html;
 })();

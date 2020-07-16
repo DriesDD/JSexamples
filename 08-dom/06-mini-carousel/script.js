@@ -18,7 +18,12 @@
         "../../_shared/img/lemon.svg",
         "../../_shared/img/map.svg",
     ];
+    let currentpic = 0
+    document.getElementById('next').onclick = () => {
+        const pic = document.getElementsByTagName("img")[0];
+        currentpic +=1
+        if (currentpic >= gallery.length) {currentpic = 0};
+        pic.setAttribute("src",gallery[currentpic]);
 
-    // your code here
-
+    }
 })();

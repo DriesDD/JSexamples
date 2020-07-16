@@ -10,7 +10,11 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
-
+    const data = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
+    let html = "<table>"
+    for (i=0;i<data.length;i++)
+        {html += "<tr> <td>" +data[i] + "</td> </tr>"}
+    html += "</table>"
+    let table = document.createElement("tr");    
+    document.getElementById("target").innerHTML = html;
 })();
