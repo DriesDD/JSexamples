@@ -11,6 +11,20 @@
 
 (function() {
 
-    // your code here
+function $(x) {return document.getElementById(x);}
+function update() {$('target').innerText = $('part-one').innerText + $('part-two').innerText + $('part-three').innerText + $('part-four').innerText};
+
+
+$('part-one').onclick = () => {$('part-one').innerText = '+' + (Number($('part-one').innerText) + 1);
+update();}
+
+$('part-two').onclick = () => {$('part-two').innerText = ('00' + (Number($('part-two').innerText) + 1)).substr(-2,2);
+update();}
+
+$('part-three').onclick = () => {$('part-three').innerText = ('00' + (Number($('part-three').innerText) + 1)).substr(-2,2);
+update();}
+
+$('part-four').onclick = () => {$('part-four').innerText = ('00' + (Number($('part-four').innerText) + 1)).substr(-2,2);
+update();}
 
 })();

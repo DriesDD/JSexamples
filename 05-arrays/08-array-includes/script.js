@@ -27,8 +27,6 @@
     ];
     console.log('apple in array? ' + fruits.includes('apple'))
     
-    //){console.log('There\'s an apple')}
-    //else (console.log('Can\'t find an apple.'))
     // your code here
 
 

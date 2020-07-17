@@ -10,7 +10,7 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
+    
+    document.getElementById("slider").addEventListener("input",function(){document.getElementById("target").innerText = "0"+document.getElementById("slider").value});
 
 })();
