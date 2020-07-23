@@ -1,6 +1,6 @@
 /* becode/javascript
  *
- * /11-fetch/05-delete/script.js - 11.5: supprimer un élément
+ * /09-fetch/05-delete/script.js - 11.5: supprimer un élément
  *
  * coded by leny@BeCode
  * started at 12/05/2019

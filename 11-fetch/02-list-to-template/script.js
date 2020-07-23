@@ -1,6 +1,6 @@
 /* becode/javascript
  *
- * /11-fetch/02-list-to-template/script.js - 11.2: liste vers template
+ * /09-fetch/02-list-to-template/script.js - 11.2: liste vers template
  *
  * coded by leny@BeCode
  * started at 12/05/2019

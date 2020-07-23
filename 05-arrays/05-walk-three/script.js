@@ -41,7 +41,7 @@ document.getElementById('run').onclick = function () {
 };
 
 function walk() {
-    people.forEach(function (item, index, array) {
-        console.log(item.firstname, index)
+    people.forEach(function (item) {
+        console.log(item.firstname, item.lastname)
     })
 };

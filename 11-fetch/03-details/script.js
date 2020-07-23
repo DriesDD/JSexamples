@@ -1,6 +1,6 @@
 /* becode/javascript
  *
- * /11-fetch/03-details/script.js - 11.3: details
+ * /09-fetch/03-details/script.js - 11.3: details
  *
  * coded by leny@BeCode
  * started at 12/05/2019

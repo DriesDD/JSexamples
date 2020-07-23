@@ -41,5 +41,8 @@
     document.getElementById('run').onclick = () => 
     {const birdex = Math.floor(Math.random()*birds.length);
     document.getElementById('target').innerHTML = birds.map(a=>a.name)[birdex] + ' ' + Array.from(adjectives)[Math.floor(Math.random()*adjectives.size)]
-    if (birds.map(a=>a.fem)[birdex] == true) {document.getElementById('target').innerHTML += 'e'}
+    if (birds.map(a=>a.fem)[birdex] == true) {document.getElementById('target').innerHTML += 'e'};
+
+    let randomBirds = birds[Math.floor(Math.random() * birds.length)];
+    console.log(document.getElementById("target").innerHTML = randomBirds.name);
     }})();

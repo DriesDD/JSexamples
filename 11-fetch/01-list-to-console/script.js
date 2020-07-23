@@ -1,6 +1,6 @@
 /* becode/javascript
  *
- * /11-fetch/01-list-to-console/script.js - 11.1: liste vers console
+ * /09-fetch/01-list-to-console/script.js - 11.1: liste vers console
  *
  * coded by leny@BeCode
  * started at 12/05/2019
@@ -10,5 +10,11 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+
+document.getElementById('run').onclick = () => {
+    fetch('http://localhost:3000/heroes')
+    .then(response => response.json())
+    .then(data => console.log(data));
+}
+
 })();

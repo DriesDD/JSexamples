@@ -37,7 +37,7 @@ Some exercises will require running the code on a _local server_ (this is genera
 Maybe you have already installed [node.js](https://nodejs.org/en/) and [npm](https://docs.npmjs.com/about-npm/) on your machines. If not, do it now ;).  
 If you want to configure correctly the global settigs of npm [follow this article](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally#manually-change-npms-default-directory).
 
-Then, use your terminal to _navigate_ to this folder and run the following commands:
+Then, use your terminal to _navigate_ to the folder where this README is and run the following commands:
 
     npm install
     npm start
@@ -51,7 +51,7 @@ covered with a little script to run said _API_ in _local_, follow the steps
 below:
 
 - open a terminal
-- navigate to this folder
+- navigate to the folder where this README is
 - run `npm run api`
 
 From there you will have the _REST API_ running on _localhost_ on the port 3000.

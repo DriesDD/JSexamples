@@ -7,10 +7,10 @@
  * started at 09/05/2019
 -->
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>BeCode/JavaScript - 10.9: gestion d'erreur (async/await)</title>
+        <title>BeCode/JavaScript - 10.9: Handling errors (async/await)</title>
 
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
         <link rel="stylesheet" href="../../_shared/css/normalize.css" />
@@ -22,20 +22,22 @@
                 <h1>BeCode / JavaScript</h1>
                 <h2>
                     <span>10.9</span>
-                    <strong>gestion d'erreur (async/await)</strong>
+                    <strong>Handling errors (async/await)</strong>
                 </h2>
             </header>
             <div class="content">
                 <section class="explain">
-                    <p>La fonction <strong>window.lib.getPersons()</strong> est disponible dans le script. Elle retourn une Promise qui sera résolue, après un petit délai, avec un tableau de personnes.</p>
-                    <p>Au clic sur le bouton, appelle la fonction getPersons et affiche le resultat obtenus dans la console. <strong>Attention :</strong> la Promise retournée par la fonction getPersons a plus ou moins une chance sur deux d'être rejetée avec une erreur. Si c'est le cas, utilise <em>console.error()</em> pour l'afficher.</p>
+                    <p>The function <strong>window.lib.getPersons()</strong> is available in the script. It returns a Promise that will be resolved, after a short delay, with a table of people.</p>
+                    <p>When you click on the button, call the getPersons function and display the result obtained in the console.
+                    <br/><strong>Warning :</strong> the Promise returned by the getPersons function has more or less a half chance of being rejected with an error. If so, use <em>console.error()</em> to display it.
+                    </p>
                     <p>
-                        <strong>Note :</strong> pour cet exercice, utilise la syntaxe <em>async/await</em>.
+                        <strong>Note :</strong> for this exercise, use the syntax <em>async/await</em>.
                     </p>
                 </section>
                 <section class="material">
                     <div class="actions">
-                        <button type="button" id="run">Lancer le script</button>
+                        <button type="button" id="run">Run the script</button>
                     </div>
                 </section>
             </div>

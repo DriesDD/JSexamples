@@ -1,6 +1,6 @@
 /* becode/javascript
  *
- * /11-fetch/04-add/script.js - 11.4: ajouter un élément
+ * /09-fetch/04-add/script.js - 11.4: ajouter un élément
  *
  * coded by leny@BeCode
  * started at 12/05/2019
