@@ -10,5 +10,9 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    document.getElementById('run').onclick = () => {
+        window.lib.getPosts()
+            .then((articles) => console.log(articles))
+            .catch((error) => console.log(error));
+    };
 })();

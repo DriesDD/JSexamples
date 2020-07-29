@@ -1,3 +1,4 @@
+
 /* becode/javascript
  *
  * /10-asynchronous/07-async-get-posts/script.js - 10.7: chargement d'articles (async/await)
@@ -10,5 +11,16 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
-})();
+document.getElementById('run').onclick = () => {
+      window.lib.getPosts().then(getPosts).catch(error);
+    };
+  
+    async function getPosts(articles) {
+      await articles;
+      console.log(articles);
+    }
+    async function error(error) {
+      await error;
+      console.error(error);
+    }
+  })();

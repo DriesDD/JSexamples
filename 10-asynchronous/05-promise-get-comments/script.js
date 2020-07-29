@@ -10,5 +10,25 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
-})();
+   document.getElementById('run').onclick = () => {
+      window.lib.getPosts()
+      .then(commentgetter)
+      .catch(error);
+    };
+  
+    function commentgetter(articles) {
+      for (const obj in articles) {
+            
+        window.lib
+          .getComments(articles[obj].id)
+          .then((comments) => {
+            articles[obj].comments = comments;
+          })
+          .catch(error);
+      }
+      console.log(articles);
+    }
+    function error(error) {
+      console.log(error);
+    }
+  })();

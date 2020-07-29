@@ -25,6 +25,4 @@ k +=1}
 
 setInterval(waves,100);
 
-
-
 })();

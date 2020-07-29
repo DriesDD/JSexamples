@@ -10,5 +10,15 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    document.getElementById('run').onclick = () => {
+        window.lib.getPersons(getpeople);
+    };
+
+    function getpeople(error, people) {
+        if (error) {
+            console.error(error);
+        } else {
+            console.log(people);
+        }
+    }
 })();

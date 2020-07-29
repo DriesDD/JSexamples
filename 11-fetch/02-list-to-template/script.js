@@ -10,5 +10,46 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    function $(x) {
+        return document.getElementById(x);
+    }
+
+    let eli, eh4, eem, estrong, ep, etext
+
+    document.getElementById('run').onclick = () => {
+        fetch('http://localhost:3000/heroes')
+            .then(response => response.json())
+            .then(data => {
+                for (i = 0; i <= data.length; i++)
+
+                { //elements
+                    eli = document.createElement("li");
+                    eli.setAttribute("class", "hero");
+                    eh4 = document.createElement("h4");
+                    eh4.setAttribute("class", "title");
+                    estrong = document.createElement("strong");
+                    estrong.setAttribute("class", "name");
+                    eem = document.createElement("em");
+                    eem.setAttribute("class", "alter-ego");
+                    ep = document.createElement("em");
+                    ep.setAttribute("class", "powers");
+
+                    //structure
+                    eh4.appendChild(estrong);
+                    eh4.appendChild(eem);
+                    eli.appendChild(eh4);
+                    eli.appendChild(ep);
+
+                    //dynamic content
+                    etext = document.createTextNode(data[i].name);
+                    estrong.appendChild(etext);
+                    etext = document.createTextNode(data[i].alterEgo);
+                    eem.appendChild(etext);
+                    etext = document.createTextNode(data[i].abilities);
+                    ep.appendChild(etext);
+                    $('target').appendChild(eli);
+                };
+            });
+    }
+
 })();

@@ -10,5 +10,16 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
-})();
+    let x;
+    function $(x) {
+        return document.getElementById(x);
+    }
+    document.getElementById('run').onclick = () => {
+        fetch('http://localhost:3000/heroes')
+            .then(response => response.json())
+            .then(data => {
+                    data.splice($('hero-id').value-1, 1)
+                    console.log(data)
+                })
+            }
+    })();
